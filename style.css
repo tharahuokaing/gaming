@@ -1,3 +1,7 @@
+/* ==========================================================================
+   Huokaing Thara Gaming - Official Stylesheet
+   ========================================================================== */
+
 :root {
     --bg-color: #0b1120;
     --card-bg: #141f36;
@@ -6,6 +10,8 @@
     --text-color: #e2e8f0;
     --text-muted: #94a3b8;
     --facebook-blue: #1877f2;
+    --facebook-blue-hover: #1464cc;
+    --border-gold: rgba(212, 175, 55, 0.25);
 }
 
 * {
@@ -21,33 +27,81 @@ body {
     line-height: 1.6;
 }
 
-/* Header / Banner Styling */
+/* ==========================================================================
+   Logo & Navbar Styles
+   ========================================================================== */
+
+.central-logo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid var(--gold);
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.central-logo:hover {
+    transform: scale(1.05);
+}
+
+.navbar {
+    background: rgba(20, 31, 54, 0.9);
+    border-bottom: 1px solid var(--border-gold);
+    padding: 12px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    backdrop-filter: blur(8px);
+}
+
+.navbar .logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-text h1 {
+    font-size: 1.1rem;
+    color: var(--gold);
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/* ==========================================================================
+   Hero / Header Banner
+   ========================================================================== */
+
 .hero-header {
     position: relative;
     background: linear-gradient(135deg, #091326 0%, #1a2b4c 100%);
     border-bottom: 3px solid var(--gold);
     text-align: center;
-    padding: 60px 20px;
+    padding: 50px 20px;
+    margin-bottom: 30px;
 }
 
 .hero-content h1 {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     color: var(--gold);
     letter-spacing: 2px;
-    margin-bottom: 5px;
+    margin-bottom: 6px;
     text-transform: uppercase;
-    text-shadow: 0 0 10px rgba(212, 175, 55, 0.3);
+    text-shadow: 0 0 12px rgba(212, 175, 55, 0.3);
 }
 
 .badge {
     display: inline-block;
     background: var(--gold);
     color: #000;
-    font-weight: bold;
-    font-size: 0.8rem;
-    padding: 4px 12px;
+    font-weight: 700;
+    font-size: 0.78rem;
+    padding: 4px 14px;
     border-radius: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
     letter-spacing: 1px;
 }
 
@@ -55,40 +109,68 @@ body {
     color: var(--text-muted);
     font-weight: 600;
     letter-spacing: 3px;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
 }
 
-/* Layout Container */
+/* ==========================================================================
+   Layout & Cards
+   ========================================================================== */
+
 .container {
-    max-width: 800px;
-    margin: 30px auto;
+    max-width: 850px;
+    margin: 0 auto;
     padding: 0 20px;
 }
 
-/* Card General Style */
 .card {
     background: var(--card-bg);
-    border: 1px solid rgba(212, 175, 55, 0.2);
-    border-radius: 12px;
+    border: 1px solid var(--border-gold);
+    border-radius: 14px;
     padding: 24px;
-    margin-bottom: 25px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    margin-bottom: 30px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
 }
 
 .card h2 {
     color: var(--gold);
-    font-size: 1.3rem;
-    margin-bottom: 15px;
+    font-size: 1.35rem;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
-/* Video Wrapper & Play Button */
+/* ==========================================================================
+   Video Showcase Section (5 Videos)
+   ========================================================================== */
+
+.video-card-item {
+    margin-bottom: 25px;
+    border-bottom: 1px dashed rgba(212, 175, 55, 0.2);
+    padding-bottom: 20px;
+}
+
+.video-card-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.video-title {
+    font-size: 1.05rem;
+    color: var(--text-color);
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
 .video-container {
     position: relative;
     width: 100%;
-    height: 380px;
+    height: 360px;
     border-radius: 10px;
     overflow: hidden;
     border: 2px solid var(--gold);
+    background-color: #000;
 }
 
 .video-thumbnail {
@@ -99,7 +181,7 @@ body {
 }
 
 .video-container:hover .video-thumbnail {
-    transform: scale(1.05);
+    transform: scale(1.04);
 }
 
 .video-overlay {
@@ -116,15 +198,15 @@ body {
 }
 
 .play-btn {
-    width: 75px;
-    height: 75px;
+    width: 70px;
+    height: 70px;
     background: var(--gold);
     color: #000;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2rem;
+    font-size: 1.8rem;
     text-decoration: none;
     transition: all 0.3s ease;
     box-shadow: 0 0 20px rgba(212, 175, 55, 0.6);
@@ -136,32 +218,43 @@ body {
 }
 
 .play-text {
-    margin-top: 15px;
+    margin-top: 12px;
     color: #fff;
     font-weight: 600;
-    font-size: 1rem;
+    font-size: 0.95rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
 }
 
-/* Description / About */
-.about-card h3 {
+/* ==========================================================================
+   About / Description Section
+   ========================================================================== */
+
+.about-card .lang-section h3 {
     color: var(--gold);
-    margin-bottom: 8px;
-    font-size: 1.1rem;
+    margin-bottom: 10px;
+    font-size: 1.15rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
 .about-card p {
     color: var(--text-color);
     font-size: 0.95rem;
+    line-height: 1.7;
 }
 
 .divider {
     border: 0;
     height: 1px;
-    background: rgba(212, 175, 55, 0.2);
-    margin: 20px 0;
+    background: var(--border-gold);
+    margin: 22px 0;
 }
 
-/* Action Buttons */
+/* ==========================================================================
+   Action Buttons & Footer
+   ========================================================================== */
+
 .action-section {
     display: flex;
     gap: 15px;
@@ -170,7 +263,7 @@ body {
 }
 
 .btn {
-    padding: 12px 24px;
+    padding: 12px 26px;
     border-radius: 8px;
     font-weight: 600;
     text-decoration: none;
@@ -179,7 +272,8 @@ body {
     gap: 10px;
     cursor: pointer;
     border: none;
-    transition: background 0.3s ease;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
 }
 
 .btn-fb {
@@ -188,7 +282,8 @@ body {
 }
 
 .btn-fb:hover {
-    background: #1464cc;
+    background: var(--facebook-blue-hover);
+    transform: translateY(-2px);
 }
 
 .btn-share {
@@ -200,26 +295,42 @@ body {
 .btn-share:hover {
     background: var(--gold);
     color: #000;
+    transform: translateY(-2px);
 }
 
-/* Footer */
 footer {
     text-align: center;
-    padding: 20px;
+    padding: 25px;
     color: var(--text-muted);
     font-size: 0.85rem;
     border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-/* Responsive */
+/* ==========================================================================
+   Responsive Design
+   ========================================================================== */
+
 @media (max-width: 600px) {
     .hero-content h1 {
-        font-size: 1.8rem;
+        font-size: 1.7rem;
     }
+
     .video-container {
-        height: 250px;
+        height: 230px;
     }
+
+    .play-btn {
+        width: 55px;
+        height: 55px;
+        font-size: 1.4rem;
+    }
+
     .action-section {
         flex-direction: column;
+    }
+
+    .btn {
+        width: 100%;
+        justify-content: center;
     }
 }
