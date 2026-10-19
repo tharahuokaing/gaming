@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     setInterval(() => {
         for (let i = 0; i < viewCounts.length; i++) {
-            viewCounts[i] += 20; // Add 20 views
+            viewCounts[i] += 1; // Add 1 views
             const viewElement = document.getElementById(`views-${i + 1}`);
             if (viewElement) {
                 viewElement.textContent = viewCounts[i].toLocaleString(); // Format with commas (e.g., 10,000,020)
