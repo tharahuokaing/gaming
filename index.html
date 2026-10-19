@@ -1,119 +1,129 @@
 <!DOCTYPE html>
-<html lang="km">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Huokaing Thara Gaming | ហួកាំង ថារ៉ា ហ្គេមមីង</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@400;600;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huokaing Thara Gaming - Official Page</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts for Khmer and English typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,300..700;1,300..700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <!-- Header & Navigation -->
-  <header class="header">
-    <div class="logo-container">
-      <div class="logo-badge">HTG</div>
-      <span class="brand-title">Huokaing Thara <span>Gaming</span></span>
-    </div>
-    <div class="lang-switch">
-      <button id="btn-en" class="lang-btn active" onclick="switchLanguage('en')">EN</button>
-      <button id="btn-km" class="lang-btn" onclick="switchLanguage('km')">KH</button>
-    </div>
-  </header>
+    <!-- Facebook SDK for Video Embeds -->
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v18.0"></script>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-overlay"></div>
-    <div class="hero-content">
-      <h1 id="hero-title">Welcome to Huokaing Thara Gaming</h1>
-      <p id="hero-subtitle">Your Ultimate Hub for Gaming Highlights, Live Streams & Esports Action!</p>
-      <a href="https://facebook.com" target="_blank" class="cta-button" id="cta-btn">Follow on Facebook</a>
-    </div>
-  </section>
+    <!-- Header Section -->
+    <header class="hero-header">
+        <div class="overlay"></div>
+        <div class="header-content">
+            <div class="badge">EST. 2026</div>
+            <h1>HUOKAING THARA GAMING</h1>
+            <p class="tagline">PLAY • CREATE • ENGAGE</p>
+        </div>
+    </header>
 
-  <!-- About / Description Section -->
-  <main class="container">
-    <section class="about-card">
-      <div class="card-header">
-        <h2 id="about-heading">About the Page</h2>
-        <span class="badge">Gaming Video Creator</span>
-      </div>
+    <!-- Main Container -->
+    <main class="container">
 
-      <!-- English Description -->
-      <div id="desc-en" class="desc-block">
-        <h3>Official Page Overview</h3>
-        <p>
-          Welcome to the official Facebook Gaming community of <strong>Huokaing Thara Gaming</strong>! 
-          This channel is dedicated to bringing you high-energy gaming entertainment, including action-packed live streams, 
-          in-depth gameplay breakdowns, pro-tier highlights, and esports tournament news.
-        </p>
-        <p>
-          Whether you are here to learn advanced strategies, watch competitive matches, or simply relax and engage with 
-          a passionate community of gamers, you've found the right spot. Hit the <strong>Follow</strong> button, turn on notifications, 
-          and join us on the journey!
-        </p>
-        
-        <h4>What to Expect:</h4>
-        <ul class="feature-list">
-          <li>🎮 High-definition live gameplay streams</li>
-          <li>⚡ Daily Facebook Reels & short game highlights</li>
-          <li>💡 Pro tips, item builds, and meta tutorials</li>
-          <li>🏆 Live esports match watch-parties & commentary</li>
-        </ul>
-      </div>
+        <!-- About / Description Section -->
+        <section class="about-card">
+            <h2>About The Channel / អំពីទំព័រហ្គេម</h2>
+            <div class="divider"></div>
 
-      <!-- Khmer Description -->
-      <div id="desc-km" class="desc-block hidden">
-        <h3>ព័ត៌មានលម្អិតអំពីទំព័រ</h3>
-        <p>
-          សូមស្វាគមន៍មកកាន់ទំព័រផ្លូវការ <strong>Huokaing Thara Gaming</strong> នៅលើបណ្តាញសង្គម Facebook! 
-          ទំព័រនេះបង្កើតឡើងដើម្បីចែករំលែកភាពរីករាយ និងបទពិសោធន៍ហ្គេមដ៏សម្បូរបែប រួមមានការផ្សាយផ្ទាល់ (Live Stream) 
-          វីដេអូហ្គេមប្លែកៗ បច្ចេកទេសលេង និងព័ត៌មាន esports ថ្មីៗ។
-        </p>
-        <p>
-          មិនថាលោកអ្នកចង់ស្វែងយល់ពីយុទ្ធសាស្ត្រលេងហ្គេម បច្ចេកទេសថ្មីៗ ឬគ្រាន់តែចង់កម្សាន្តអារម្មណ៍ជាមួយសហគមន៍អ្នកស្នេហាវិស័យហ្គេមនោះទេ 
-          ទំព័រនេះជាទីតាំងដ៏សមស្របបំផុតសម្រាប់អ្នក។ សូមចុច <strong>Follow</strong> និងបើកកណ្ដឹងជូនដំណឹង ដើម្បីទទួលបានវីដេអូថ្មីៗជារៀងរាល់ថ្ងៃ!
-        </p>
+            <!-- English Description -->
+            <div class="lang-block en-text">
+                <h3>English</h3>
+                <p>
+                    Welcome to the official home of <strong>Huokaing Thara Gaming</strong>! This platform is dedicated to bringing you high-energy gameplay highlights, in-depth gaming strategies, live streaming action, and interactive gaming discussions. Whether you are looking for top-tier competitive mechanics, entertaining moments, or detailed game tutorials, Huokaing Thara Gaming serves as a vibrant community hub for passionate gamers and esports enthusiasts alike.
+                </p>
+            </div>
 
-        <h4>អ្វីដែលអ្នកនឹងទទួលបាន៖</h4>
-        <ul class="feature-list">
-          <li>🎮 ការផ្សាយផ្ទាល់ (Live Stream) ហ្គេមច្បាស់ៗកម្រិត HD</li>
-          <li>⚡ វីដេអូខ្លីៗ (Reels) និងកាត់ឃ្លីបបច្ចេកទេសលេងល្អៗ</li>
-          <li>💡 ការចែករំលែកតិចនិក ការឡើង Item និងយុទ្ធសាស្ត្រឈ្នះហ្គេម</li>
-          <li>🏆 ការទស្សនា និងវិភាគការប្រកួត Esports ធំៗ</li>
-        </ul>
-      </div>
-    </section>
+            <!-- Khmer Description -->
+            <div class="lang-block km-text">
+                <h3>ភាសាខ្មែរ</h3>
+                <p>
+                    សូមស្វាគមន៍មកកាន់ទំព័រផ្លូវការ <strong>Huokaing Thara Gaming</strong>! ទំព័រនេះបង្កើតឡើងដើម្បីចែករំលែកនូវវីដេអូហ្គេមប្លែកៗ ការផ្សាយផ្ទាល់ (Live Stream) យុទ្ធសាស្ត្រក្នុងការលេងហ្គេម និងកម្សាន្តជាមួយនឹងសហគមន៍អ្នកស្នេហាវិស័យហ្គេម។ មិនថាលោកអ្នកស្វែងរកបច្ចេកទេសលេងកម្រិតខ្ពស់ ឬការកម្សាន្តសប្បាយៗនោះទេ Huokaing Thara Gaming នឹងនាំជូននូវមាតិកាហ្គេមដ៏សម្បូរបែប និងបទពិសោធន៍ថ្មីៗជានិច្ច។
+                </p>
+            </div>
+        </section>
 
-    <!-- Content Showcase Cards -->
-    <section class="grid-section">
-      <div class="grid-card">
-        <div class="icon">📡</div>
-        <h3 id="card1-title">Live Streaming</h3>
-        <p id="card1-desc">Interactive live gameplay, ranked matches, and room matches with followers.</p>
-      </div>
-      <div class="grid-card">
-        <div class="icon">🎬</div>
-        <h3 id="card2-title">Highlights & Reels</h3>
-        <p id="card2-desc">Fast-paced short videos showcasing epic clutch moments and funny highlights.</p>
-      </div>
-      <div class="grid-card">
-        <div class="icon">🤝</div>
-        <h3 id="card3-title">Community</h3>
-        <p id="card3-desc">A respectful and active space to connect, chat, and team up with other gamers.</p>
-      </div>
-    </section>
-  </main>
+        <!-- Video Gallery Section -->
+        <section class="video-section">
+            <h2>Featured Gaming Clips / វីដេអូហ្គេមលេចធ្លោ</h2>
+            <div class="divider"></div>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <p>&copy; 2026 Huokaing Thara Gaming. All rights reserved.</p>
-  </footer>
+            <div class="video-grid">
+                
+                <!-- Video Card 1 -->
+                <div class="video-card">
+                    <div class="video-thumbnail-container" id="thumb-1">
+                        <div class="video-overlay">
+                            <button class="play-btn" onclick="playVideo('video-player-1', 'thumb-1')">
+                                <span class="play-icon">▶</span> Play Video 1
+                            </button>
+                        </div>
+                    </div>
+                    <div class="video-player" id="video-player-1">
+                        <iframe 
+                            src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Fshare%2Fr%2F18xYna64AR%2F&show_text=false&width=267&autoplay=true" 
+                            width="100%" 
+                            height="476" 
+                            style="border:none;overflow:hidden" 
+                            scrolling="no" 
+                            frameborder="0" 
+                            allowfullscreen="true" 
+                            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+                        </iframe>
+                    </div>
+                    <div class="video-info">
+                        <h3>Gaming Reel Highlight #1</h3>
+                        <p>Watch the latest highlight reel from Huokaing Thara Gaming! / ទស្សនាវីដេអូហាយឡាយថ្មីៗ!</p>
+                    </div>
+                </div>
 
-  <script src="script.js"></script>
-  <script src="ultra_secure_mode.js"></script>
-  <script src="music.js"></script>
+                <!-- Video Card 2 -->
+                <div class="video-card">
+                    <div class="video-thumbnail-container" id="thumb-2">
+                        <div class="video-overlay">
+                            <button class="play-btn" onclick="playVideo('video-player-2', 'thumb-2')">
+                                <span class="play-icon">▶</span> Play Video 2
+                            </button>
+                        </div>
+                    </div>
+                    <div class="video-player" id="video-player-2">
+                        <iframe 
+                            src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Fshare%2Fr%2F18xYna64AR%2F&show_text=false&width=267&autoplay=true" 
+                            width="100%" 
+                            height="476" 
+                            style="border:none;overflow:hidden" 
+                            scrolling="no" 
+                            frameborder="0" 
+                            allowfullscreen="true" 
+                            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+                        </iframe>
+                    </div>
+                    <div class="video-info">
+                        <h3>Gaming Reel Highlight #2</h3>
+                        <p>Check out special moments & plays / ទស្សនាការប្រកួតពិសេសៗ!</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Huokaing Thara Gaming. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="ultra_secure_mode.js"></script>
+    <script src="music.js"></script>
 </body>
 </html>
