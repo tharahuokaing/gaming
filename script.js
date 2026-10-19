@@ -1,11 +1,11 @@
 /* ==========================================================================
-   Huokaing Thara Gaming - Main Script
+   Huokaing Thara Gaming - Main Script with Live View Counters
    ========================================================================== */
 
 document.addEventListener('DOMContentLoaded', () => {
     // 1. Share Button Functionality
     const shareBtn = document.getElementById('shareBtn');
-    const pageUrl = window.location.href; // Shares the current page URL
+    const pageUrl = window.location.href;
 
     if (shareBtn) {
         shareBtn.addEventListener('click', async () => {
@@ -17,26 +17,29 @@ document.addEventListener('DOMContentLoaded', () => {
                         url: pageUrl,
                     });
                 } catch (err) {
-                    console.log('Share canceled or not supported in this browser context:', err);
+                    console.log('Share canceled or not supported:', err);
                 }
             } else {
-                // Fallback for browsers without native Web Share API
                 try {
                     await navigator.clipboard.writeText(pageUrl);
-                    alert('Page link copied to clipboard! Share it with your friends.');
+                    alert('Page link copied to clipboard!');
                 } catch (err) {
-                    alert('Copy failed. Please copy the URL from your browser address bar.');
+                    alert('Copy failed.');
                 }
             }
         });
     }
 
-    // 2. Interactive Video Play Button Ripple/Click Effect
-    const playButtons = document.querySelectorAll('.play-btn');
+    // 2. Live View Counter Logic (+20 views every 5 seconds for all 5 videos)
+    const viewCounts = [10000000, 10000000, 10000000, 10000000, 10000000]; // Starts at 10 Million views each
 
-    playButtons.forEach((btn, index) => {
-        btn.addEventListener('click', () => {
-            console.log(`Navigating to Video #${index + 1} on Facebook...`);
-        });
-    });
+    setInterval(() => {
+        for (let i = 0; i < viewCounts.length; i++) {
+            viewCounts[i] += 20; // Add 20 views
+            const viewElement = document.getElementById(`views-${i + 1}`);
+            if (viewElement) {
+                viewElement.textContent = viewCounts[i].toLocaleString(); // Format with commas (e.g., 10,000,020)
+            }
+        }
+    }, 5000); // Triggers every 5 seconds
 });
